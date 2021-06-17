@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pembelian</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" >
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg_sd.jpg);">
+					<span class="login100-form-title-1">
+						Kantin SD Aisyiyah Metro
+					</span>
+				</div>
+
+				<form class="login100-form validate-form" method="POST" action="topup.php" >
+													<span class="label-input100">1</span>
+							<div class="wrap-input100 validate-input m-b-26" data-validate="scan is required">
+							<input class="input100" type="text" name="username" placeholder="SCAN BARCODE">
+							<span class="focus-input100"></span>
+							</div>
+                        
+							<div class="wrap-input100 validate-input m-b-26" data-validate="scan is required">
+                                
+                                <select type="number" class="input100" class="form-control" name="jumlah" id="jumlah">
+                                  <option disabled selected>JUMLAH TOP-UP</option>
+                                  <option name="seribu" id="seribu">1000</option>
+                                  <option name="duaribu" id="duaribu">2000</option>
+                                  <option name="limaribu"id="limaribu">5000</option>
+                                  <option name="sepuluhribu" id="sepuluhribu">10000</option>
+                                </select>
+							</div>		
+				
+					<div class="container-login100-form-btn ">
+						<button type="submit" class="login100-form-btn" name="ttopup">
+							Lanjut Top-up
+						</button>
+					</div>
+                </form>
+                <div  width="1">
+            
+            </div>
+            
+			</div>
+            <br>
+            <div class="container-login100-form-btn ">
+                <form  class="login100-form validate-form" method="POST" action="topup.php" >
+                    <button align="center" type="submit" class="login100-form-btn" name="kembali">
+                       Kembali
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        
+	</div>
+    
+	
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
